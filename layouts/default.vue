@@ -1,11 +1,16 @@
 <template>
   <v-app dark>
     <v-app-bar app flat>
-      <v-container class="d-flex justify-space-between">
+      <v-container class="d-flex justify-space-between align-center">
         <v-toolbar-title>Vocabulary Practice</v-toolbar-title>
-        <nuxt-link to="/">
-          <v-icon> mdi-home </v-icon>
-        </nuxt-link>
+        <div>
+          <v-btn nuxt to="/" class="mx-1" outlined text
+            ><v-icon left> mdi-home </v-icon>Home</v-btn
+          >
+          <v-btn nuxt to="/add" class="mx-1" outlined text
+            ><v-icon left> mdi-pencil-plus </v-icon> Add</v-btn
+          >
+        </div>
       </v-container>
     </v-app-bar>
     <v-main>

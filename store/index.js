@@ -97,3 +97,14 @@ export const getters = {
     return state.words.find((word) => word.word == id);
   },
 };
+export const mutations = {
+  ADD_WORD: (state, { Word }) => {
+    state.words.push(Word);
+  },
+};
+
+export const actions = {
+  addWord: ({ commit }, { Word }) => {
+    commit("ADD_WORD", { Word });
+  },
+};
